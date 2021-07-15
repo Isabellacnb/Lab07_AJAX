@@ -48,8 +48,7 @@ $(document).ready(function () {
       "https://api.giphy.com/v1/gifs/search?q=" +
       type +
       "&api_key=v2htMVpMxAPyF2PZc3KmMGiXZ08ADnQb&limit=10";
-    console.log(queryURL);
-
+ 
     $.ajax({
       url: queryURL,
       method: "GET",
@@ -75,7 +74,6 @@ $(document).ready(function () {
 
         $("#animals").append(animalDiv);
       });
-      console.log(response);
     });
   });
 
